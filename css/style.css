@@ -1,3 +1,156 @@
-.hidden{
-    display : none;
+
+/*태그 공통*/
+.hidden {
+  display: none!important;
 }
+h1{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin: 20px 0;
+
+}
+
+h2{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+  color: floralwhite;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*배경화면*/
+img {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom:0px;
+  z-index: -1;
+  background-size: cover;
+}
+
+/*명언*/
+#quote {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background: rgba(0,0,0,0.1);
+}
+
+/*날씨*/
+#weather {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+
+/*로그인 폼*/
+#login-form{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+
+#name{
+  font-size: 50px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  text-underline-offset: white;
+  width: 400px;
+  height: 60px;
+  outline: none;
+  background-color: transparent;
+
+  font-family: inherit;
+  text-align: center;
+}
+
+#submit{
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 0px;
+}
+
+
+/*To - Do List 관련*/
+#todo-form{
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+#todo-list{
+  justify-content: center;
+  margin: 0 0 0 230px;
+  list-style: none;
+
+}
+
+ul li{
+  font-size: 30px;
+  color: white;
+}
+
+ul li:not(:last-child){
+  margin-bottom: 5px;
+}
+
+ul{
+  padding: 0!important;
+  margin: 0 auto;
+}
+
+#ul-list{
+  border: none;
+  background: rgba(255,255,255,0.3);
+  font-size: 30px;
+  font-weight: 400;
+  outline: none;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  margin-top:2px;
+}
+#ul-session{
+  width:100%;
+}
+
+/**/
